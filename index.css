@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lexend Deca', sans-serif;
+    line-height: 2.2rem;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+h1{
+    color: hsl(0, 0%, 95%);
+    padding: .5em 0;
+    font-family: 'Big Shoulders Display', cursive;
+}
+
+p {
+    max-width: 45ch;
+}
+
+.cards > * {
+    padding: 4em;
+}
+
+.card1 {
+    background-color:  hsl(31, 77%, 52%);
+}
+
+.card2 {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.card3 {
+    background-color: hsl(179, 100%, 13%);
+}
+
+.card1 > .button {
+    color: hsl(31, 77%, 52%);
+}
+
+.card2 > .button {
+    color: hsl(184, 100%, 22%);
+}
+
+.card3 > .button {
+    color: hsl(179, 100%, 13%);
+}
+
+.button{
+    text-align: center;
+    background-color: hsl(0, 0%, 95%);
+    color: black;
+    border-radius: 30px;
+    max-width: 8em;
+    margin-top: 2em;
+    padding: .6em;
+}
+
+footer {
+    text-align: center;
+    padding: 0.2em 0;
+}
+
+/* Desktop */
+
+@media (min-width:50em) {
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100svh;
+    }
+
+    .cards {
+        flex-direction: row;
+        max-width: 65em;
+    }
+
+    .card1 {
+        border-radius: 10px 0 0 10px;
+    }
+
+    .card3 {
+        border-radius: 0 10px 10px 0;
+    }
+}
+
+
